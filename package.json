@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack server --open"
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,10 @@
     "stylelint-scss": "^3.19.0",
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^1.16.5"
+    "webpack-dev-server": "^3.11.2"
   },
-  "homepage": "https://github.com/igorkol91/ToDoList#readme"
+  "homepage": "https://github.com/igorkol91/ToDoList#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
