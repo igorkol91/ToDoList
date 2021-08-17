@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bottom-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+  width: 50%;
+}
+
+.drag-bg-img {
+  background: black;
+  width: 0.3em;
+  height: 0.3em;
+  color: white;
+  border-radius: 50%;
+  align-self: center;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  top: 0;
+  height: 3em;
+  padding-top: 0.8em;
+  border-radius: 2%;
+}
+
+.success {
+  position: absolute;
+  top: 0;
+  height: 3em;
+  padding-top: 0.8em;
+  border-radius: 2%;
+}
