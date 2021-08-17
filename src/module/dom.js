@@ -34,5 +34,5 @@ const updateDom = () => {
     toDoContainer.appendChild(li);
   });
 };
-
+// eslint-disable-next-line
 export { updateDom };
