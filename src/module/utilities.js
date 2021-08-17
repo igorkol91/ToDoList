@@ -16,14 +16,15 @@ const error = () => {
   setTimeout(() => error.remove(), 3000);
 };
 
-const createLiTodo = (todoDescription) => {
+const createLiTodo = (todoDescription, index) => {
   const li = document.createElement('li');
   const checkbox = document.createElement('input');
   const description = document.createElement('h6');
   const dragableI = document.createElement('i');
   checkbox.type = 'checkbox';
   description.innerText = todoDescription;
-  // Add classes
+  // Add classes and attributes
+  li.setAttribute('data-id', index);
   li.classList += 'list-unstyled d-flex bottom-border w-50 position-relative';
   checkbox.classList += 'my-3';
   description.classList += 'mx-3 my-auto';
