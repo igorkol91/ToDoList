@@ -1,7 +1,7 @@
 import './main.css';
 import ToDo from './module/todo.js';
 import Storage from './module/localStorage.js';
-import { updateDom } from './module/dom.js';
+import updateDom from './module/dom.js';
 
 const input = document.querySelector('#todo-entry');
 let storage = [];
