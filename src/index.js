@@ -25,11 +25,11 @@ input.addEventListener('keypress', (e) => {
   if (e.key === 'Enter') {
     // Validation to prevent too long inputs
     if ((input.value).length > 30 || (input.value).length < 3) {
-      error()
+      error();
       input.value = '';
       // Create new todo if input length is less that 20 characters
     } else {
-      success()
+      success();
       CreateTodo(input.value);
       input.value = '';
       updateDom();
