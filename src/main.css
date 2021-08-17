@@ -9,10 +9,6 @@
   width: 50%;
 }
 
-.margin-desc {
-  margin-top: 3.2%;
-}
-
 .drag-bg-img {
   background: black;
   width: 0.3em;
@@ -28,15 +24,15 @@
 .error {
   position: absolute;
   top: 0;
-  height: 5%;
-  padding-top: 1%;
+  height: 3em;
+  padding-top: 0.8em;
   border-radius: 2%;
 }
 
 .success {
   position: absolute;
   top: 0;
-  height: 5%;
-  padding-top: 1%;
+  height: 3em;
+  padding-top: 0.8em;
   border-radius: 2%;
 }
