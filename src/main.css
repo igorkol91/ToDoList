@@ -9,16 +9,12 @@
   width: 50%;
 }
 
-.drag-bg-img {
-  background: black;
-  width: 0.3em;
-  height: 0.3em;
-  color: white;
-  border-radius: 50%;
+.drag-bg {
+  border: rgba(0, 0, 0, 0.137) solid 1px;
+  padding: 0.1em 0.4em 0.1em 0.4em;
   align-self: center;
   position: absolute;
   right: 5%;
-  cursor: pointer;
 }
 
 .error {
@@ -35,4 +31,8 @@
   height: 3em;
   padding-top: 0.8em;
   border-radius: 2%;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
