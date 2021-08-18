@@ -17,6 +17,21 @@
   right: 0;
 }
 
+.edit {
+  border: rgba(0, 0, 0, 0.137) solid 1px;
+  padding: 0.1em 0.4em 0.1em 0.4em;
+  align-self: center;
+  position: absolute;
+  right: 50px;
+}
+
+.editInput {
+  position: absolute;
+  top: 0.6em;
+  left: 1.8em;
+  border: 1px solid black;
+}
+
 .error {
   position: absolute;
   top: 0;
