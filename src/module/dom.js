@@ -3,21 +3,7 @@ import { createLiTodo } from './utilities.js';
 
 const toDoContainer = document.querySelector('ul');
 const removeBtn = document.querySelector('#remove-btn');
-const defaultTodos = [{
-  description: 'Example1',
-  checked: false,
-  index: 1,
-},
-{
-  description: 'Example2',
-  checked: false,
-  index: 2,
-},
-{
-  description: 'Example3',
-  checked: false,
-  index: 3,
-}];
+const defaultTodos = [];
 
 const updateDom = () => {
   // reset container
