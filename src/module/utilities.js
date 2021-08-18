@@ -73,6 +73,7 @@ const editButton = (e) => {
       }
     }
   });
+  // Add event listener to stop the editing
   descriptionInput.addEventListener('keypress', (e) => {
     if (e.key === '`') {
       e.target.remove();
