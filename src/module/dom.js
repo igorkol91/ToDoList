@@ -43,7 +43,7 @@ const updateDom = () => {
   });
 };
 
-// Remove all selected(completed todo's) button
+// Remove all selected(completed todo's) button and update the dom after
 removeBtn.addEventListener('click', () => {
   let storage = Storage.get();
   storage = storage.filter((elem) => elem.checked !== true);

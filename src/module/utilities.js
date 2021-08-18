@@ -1,5 +1,6 @@
 import Storage from './localStorage.js';
 
+// Function for displaying a todo was created
 const success = () => {
   const success = document.createElement('div');
   success.innerText = 'To Do created successfully!';
@@ -9,6 +10,7 @@ const success = () => {
   setTimeout(() => success.remove(), 3000);
 };
 
+// Function to display a todo was not created
 const error = () => {
   const error = document.createElement('div');
   error.innerText = 'To Do should be 3-30 characters!';
@@ -18,6 +20,7 @@ const error = () => {
   setTimeout(() => error.remove(), 3000);
 };
 
+// Adding line through if the todo is checked as completed and updating local storage
 const checkLi = (e, index) => {
   const todoArray = Storage.get();
   if (e.target.checked) {
@@ -30,6 +33,7 @@ const checkLi = (e, index) => {
   Storage.set(todoArray);
 };
 
+// Individual remove button added on every todo li
 const deleteBtn = (e, index) => {
   e.target.parentNode.remove();
   let storage = Storage.get();
