@@ -14,7 +14,7 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-In vsCode console run $git clone https://github.com/igorkol91/ToDoList/tree/testing
+In vsCode console run $git clone https://github.com/igorkol91/ToDoList/tree/crudBranch
 Then run $cd (the folder name)
 Choose the corect branch by runnung $git checkout removeEdit
 To install all dependancies in the console run $npm install
