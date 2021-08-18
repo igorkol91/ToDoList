@@ -15,6 +15,8 @@
 
 To get a local copy up and running follow these simple example steps.
 In vsCode console run $git clone https://github.com/igorkol91/ToDoList/tree/testing
+Then run $cd (the folder name)
+Choose the corect branch by runnung $git checkout removeEdit
 To install all dependancies in the console run $npm install
 To start the server run $npm run start
 
