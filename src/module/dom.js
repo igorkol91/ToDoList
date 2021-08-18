@@ -2,26 +2,27 @@ import Storage from './localStorage.js';
 import { createLiTodo } from './utilities.js';
 
 const toDoContainer = document.querySelector('ul');
+const removeBtn = document.querySelector('#remove-btn');
 const defaultTodos = [{
   description: 'Example1',
   checked: false,
-  index: null,
+  index: 1,
 },
 {
   description: 'Example2',
   checked: false,
-  index: null,
+  index: 2,
 },
 {
   description: 'Example3',
   checked: false,
-  index: null,
+  index: 3,
 }];
 
 const updateDom = () => {
   // reset container
   toDoContainer.innerHTML = '';
-  let index = 0;
+  let index = -1;
   // Check if the storage exists
   if (Storage.isEmpty()) {
     Storage.set(defaultTodos);
@@ -36,9 +37,18 @@ const updateDom = () => {
     // Create li, check box and description h5 for every Todo Object
     const newLi = createLiTodo(elem.description, index);
     // Append li on the ul and add classes
-    toDoContainer.classList += 'p-0 m-0';
+    toDoContainer.classList = 'p-0 m-0';
     toDoContainer.append(newLi);
+    Storage.set(storage);
   });
 };
+
+// Remove all selected(completed todo's) button and update the dom after
+removeBtn.addEventListener('click', () => {
+  let storage = Storage.get();
+  storage = storage.filter((elem) => elem.checked !== true);
+  Storage.set(storage);
+  updateDom();
+});
 
 export default updateDom;
