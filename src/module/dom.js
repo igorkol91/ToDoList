@@ -1,3 +1,4 @@
+import dragAndDrop from './dragAndDrop.js';
 import Storage from './localStorage.js';
 import { createLiTodo } from './utilities.js';
 
@@ -25,6 +26,7 @@ const updateDom = () => {
     // Append li on the ul and add classes
     toDoContainer.classList = 'p-0 m-0';
     toDoContainer.append(newLi);
+    dragAndDrop();
     Storage.set(storage);
   });
 };

@@ -3,14 +3,11 @@ import ToDo from './module/todo.js';
 import Storage from './module/localStorage.js';
 import updateDom from './module/dom.js';
 import { success, error } from './module/utilities.js';
-import dragAndDrop from './module/dragAndDrop.js';
 
 const input = document.querySelector('#todo-entry');
-const todoContainer = document.querySelector('ul');
 let storage = [];
 
 window.onload = () => {
-  dragAndDrop(todoContainer);
   updateDom();
 };
 

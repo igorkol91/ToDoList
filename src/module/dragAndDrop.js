@@ -1,9 +1,10 @@
 import Storage from './localStorage.js';
 
+const todoContainer = document.querySelector('ul');
 let targetedElement;
 
-const dragAndDrop = (ul) => {
-  ul.childNodes.forEach((element) => {
+const dragAndDrop = () => {
+  todoContainer.childNodes.forEach((element) => {
     // Add class to track the current dragging element
     element.addEventListener('dragstart', () => {
       element.classList.add('dragging');
