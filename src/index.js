@@ -7,7 +7,9 @@ import { success, error } from './module/utilities.js';
 const input = document.querySelector('#todo-entry');
 let storage = [];
 
-window.onload = updateDom();
+window.onload = () => {
+  updateDom();
+};
 
 const CreateTodo = (description) => {
   const toDo = new ToDo(description);

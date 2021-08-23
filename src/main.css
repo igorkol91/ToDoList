@@ -51,3 +51,7 @@
 .line-through {
   text-decoration: line-through;
 }
+
+.dragable {
+  cursor: move;
+}

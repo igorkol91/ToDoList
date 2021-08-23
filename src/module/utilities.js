@@ -34,10 +34,10 @@ const checkLi = (e, index) => {
   const todoArray = Storage.get();
   if (e.target.checked) {
     todoArray[index].checked = true;
-    e.target.parentNode.childNodes[1].classList += 'mx-3 my-auto line-through';
+    e.target.parentNode.childNodes[1].classList = 'mx-3 my-auto line-through';
   } else {
     todoArray[index].checked = false;
-    e.target.parentNode.childNodes[1].classList += 'mx-3 my-auto';
+    e.target.parentNode.childNodes[1].classList = 'mx-3 my-auto';
   }
   Storage.set(todoArray);
 };
@@ -96,7 +96,8 @@ const createLiTodo = (todoDescription, index) => {
   });
   // Add classes, attributes and event listeners
   li.setAttribute('data-id', index);
-  li.classList += 'list-unstyled d-flex bottom-border w-50 position-relative';
+  li.setAttribute('draggable', 'true');
+  li.classList += 'list-unstyled d-flex bottom-border w-50 position-relative dragable';
   checkbox.classList += 'my-3';
   deleteOneBtn.innerText = 'X';
   deleteOneBtn.classList = 'drag-bg my-auto';
